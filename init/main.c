@@ -266,10 +266,10 @@ static void revoke_temp_mapping(void)
 pid_t start_glush(void)
 {
 #ifndef TERMINAL_BEGIN
-#define TERMINAL_BEGIN "10"
+#define TERMINAL_BEGIN "14"
 #endif
 #ifndef TERMINAL_END
-#define TERMINAL_END "23"
+#define TERMINAL_END "27"
 #endif
 
 	char *argv[] = {"glush", TERMINAL_BEGIN, TERMINAL_END,

@@ -11,7 +11,7 @@ User_seg_max="0x800000"	# 8 MiB
 #User_seg_max="0x80000000"	# 2 GiB
 UPROC_MAX=32	# Number of user processes
 NIC=1			# Support NIC driver
-GFS_IMG="/home/stu/Ktemp/glucos-img"	# Image file for GFS to protect my SSD
+GFS_IMG="/home/glucose/Ktemp/glucos-img"	# Image file for GFS to protect my SSD
 
 VIEW=""
 for opt in $@

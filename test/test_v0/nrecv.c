@@ -13,7 +13,7 @@
 #include <stdint.h>
 #include <string.h>
 
-int print_location = 9;
+int print_location = 13;
 int recv_len;
 
 enum Format {NONE, HEX, CHAR, ZHCN};

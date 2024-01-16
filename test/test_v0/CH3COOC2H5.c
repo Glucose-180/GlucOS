@@ -569,7 +569,7 @@ int main(int argc, char *argv[])
 		sys_set_cylim(cylim_l, cylim_h);
 	else
 		/* Default location */
-		sys_set_cylim(0, 9);
+		sys_set_cylim(0, 13);
 
 	while (++cmd_count)
 	{

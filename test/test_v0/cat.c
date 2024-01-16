@@ -15,7 +15,7 @@
 #define LINEMAX_HEX 16
 
 const char *fname;
-int ploc = 9;
+int ploc = 13;
 char flag_hex = 0;
 int start_loc;
 long r_max = 256, r_ymr = 0;

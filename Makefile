@@ -15,7 +15,7 @@ USER_NAME = glucose180
 SHELL       = /bin/sh
 DISK        = /dev/sdb
 TTYUSB1     = /dev/ttyUSB1
-DIR_OSLAB   = $(HOME)/OSLab-RISC-V
+DIR_OSLAB   = $(HOME)/os-2023-tools
 DIR_QEMU    = $(DIR_OSLAB)/qemu
 DIR_UBOOT   = $(DIR_OSLAB)/u-boot
 
@@ -31,7 +31,7 @@ FPGA_LOG_FILE   = ./glucos-fpga.log
 # -----------------------------------------------------------------------
 
 HOST_CC         = gcc
-CROSS_PREFIX    = riscv64-unknown-linux-gnu-
+CROSS_PREFIX    = riscv64-unknown-elf-
 CC              = $(CROSS_PREFIX)gcc
 AR              = $(CROSS_PREFIX)ar
 OBJDUMP         = $(CROSS_PREFIX)objdump
@@ -125,7 +125,8 @@ SRC_MAIN    = $(SRC_ARCH) $(SRC_START) $(SRC_INIT) $(SRC_BIOS) $(SRC_DRIVER) $(S
 
 ELF_BOOT    = $(DIR_BUILD)/bootblock
 ELF_MAIN    = $(DIR_BUILD)/main
-ELF_IMAGE   = $(DIR_BUILD)/image
+ELF_IMAGE	= $(HOME)/Ktemp/glucos-img
+#ELF_IMAGE   = $(DIR_BUILD)/image
 
 # -----------------------------------------------------------------------
 # UCAS-OS User Source Files
